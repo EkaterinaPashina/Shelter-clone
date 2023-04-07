@@ -1,0 +1,224 @@
+.pets {
+    width: 100%;
+    height: 877px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: $color-light-l;
+}
+
+.content {
+    z-index: 1;
+    background-color: $color-light-l;
+    max-width: 1280px;
+    min-height: 440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.scrolsection {
+    width: 100%;
+    height: 440px;
+    box-sizing: border-box;
+}
+
+.metrica {
+    width: 270px;
+    height: 435px;
+    text-align: center;
+    background-color: $color-light-s;
+}
+
+.metrica img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pets__heading {
+    @extend %title;
+    @extend %title_H;
+    font-size: 35px;
+    line-height: 45px;
+    color: $color-dark-l;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 80px;
+}
+
+.nickname {
+    color: $color-dark-l;
+}
+
+
+.clicbottom {
+    margin: 60px auto 100px auto;
+    text-align: center;
+}
+
+.button {
+    @extend %title;
+    @extend %title_H;
+    width: 261px;
+    height: 52px;
+    padding: 15px 45px;
+    border-radius: 100px;
+    font-size: 17px;
+    line-height: 22px;
+    background-color: $color-primary;
+    text-decoration: none;
+    color: $color-dark-3xl;
+    gap: 10px;
+    border: none;
+}
+
+.button:hover {
+    background-color: $color-primary-light;
+    border: 5px solid $color-primary-light;
+}
+
+.but {
+    width: 52px;
+    height: 52px;
+    border-radius: 180%;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+}
+
+.but:hover {
+    background-color: $color-light-s;
+    border: 3px solid $color-primary-light;
+}
+
+.met {
+    width: 187px;
+    height: 52px;
+    padding: 15px 45px;
+    border-radius: 100px;
+    font-size: 17px;
+    line-height: 22px;
+    border: 2px solid $color-primary;
+    background-color: $color-light-s;
+    color: $color-dark-3xl;
+}
+
+.nickname {
+    @extend %title;
+    @extend %title_H;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: $color-dark-l;
+    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 25px;
+}
+
+.swiper {
+    height: 435px;
+    max-width: 990px;
+}
+
+.swiper-button-next:after {
+    display: none;
+}
+
+.swiper-button-prev:after {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background-color: #fff;
+    color: black;
+    max-width: 900px;
+    max-height: 500px;
+    position: relative;
+    display: flex;
+}
+
+.popup__title {
+    font-size: 35px;
+    line-height: 130%;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.popup__text_first-p {
+    font-size: 20px;
+    line-height: 115%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+
+.popup__text_second-p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 110%;
+    padding-left: 30px;
+    padding-top: 5px;
+    max-width: 383px;
+}
+
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+    font-size: 20;
+    color: black;
+}
+
+.popup:target {
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.popup__section {
+    width: 400px;
+}
+
+.popup__text ul {
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-bottom: 11px;
+}
+
+.popup__li {
+    color: #F1CDB3;
+    padding-bottom: 10px;
+}
+
+.popup__li span {
+    color: #000000;
+}

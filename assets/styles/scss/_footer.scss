@@ -1,0 +1,58 @@
+.footer {
+    height: 350px;
+    box-sizing: border-box;
+    background: $bggradient;
+    background-size: $bgsize;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: $color-primary;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer__contact,
+.footer__address {
+    padding-top: 56px;
+    padding-bottom: 60px;
+}
+
+.footer__contact {
+    padding-left: 40px;
+}
+
+.footer__title {
+    @include h2;
+    color: $color-light-xl;
+}
+
+.footer__contact-information,
+.footer__address-information {
+    display: flex;
+    align-items: center;
+}
+
+.footer__contact-information {
+    padding-top: 43px;
+}
+
+.footer__address-information {
+    padding-top: 40px;
+}
+
+.footer__information-all {
+    @include h3;
+    padding-left: 20px;
+}
+
+.footer__image {
+    width: 300px;
+    height: 310px;
+    padding-top: 40px;
+    padding-right: 40px;
+}

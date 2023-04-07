@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@import "variables";
+@import "mixins";
+@import "_header";
+@import "_about";
+@import "_pets";
+@import "_help";
+@import "_donation";
+@import "_footer";
+@import "_header-media";
+@import "_about-media";
+@import "_pets-media";
+@import "_help-media";
+@import "_donation-media";
+@import "_footer-media";

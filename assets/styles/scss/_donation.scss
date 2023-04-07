@@ -1,0 +1,94 @@
+@import "variables";
+@import "mixins";
+
+.donation {
+    box-sizing: border-box;
+    background: $color-light-l;
+    min-height: 462px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.donation-content {
+    height: 100%;
+    max-width: 915px;
+    margin-top: 80px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.donation-content__img_dog {
+    margin-top: 11px;
+    max-width: 505px;
+    height: 100%;
+    // overflow: hidden;
+}
+
+.donation-content__text {
+    max-width: 380px;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.donation-content__title {
+    @include h2;
+    padding-bottom: 20px;
+}
+
+.donation-content__search-form {
+    border: none;
+    width: 349px;
+    height: 43px;
+    display: inline-flex;
+    /* color-primary */
+    background: $color-primary;
+    border-radius: 9px;
+}
+
+// .search-form__txt {
+//     @include h4;
+// }
+
+.donation__search-btn {
+    // @include button-bg;
+    border: none;
+    width: 30px;
+    height: 23px;
+    margin-left: 30px;
+    margin-top: 10px;
+    background: $color-primary;
+}
+
+.donation__search-txt {
+    @include h3;
+    @include center-center;
+    border: none;
+    width: 274px;
+    height: 23px;
+    margin-left: 55px;
+    margin-top: 10px;
+    outline: none;
+    background: $color-primary;
+}
+
+.donation-content_subtitle {
+    @include h4;
+    margin-bottom: 20px;
+}
+
+.donation-content__paragraf {
+    @include center-center;
+    @extend %subtitle;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    margin-top: 20px;
+    color: $color-dark-m;
+}
+
+// цвета я поставила переменными, ты умничка

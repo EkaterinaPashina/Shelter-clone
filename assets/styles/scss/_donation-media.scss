@@ -1,0 +1,120 @@
+@media (max-width:$tablet) {
+    .donation__container {
+        max-width: 768px;
+        max-height: 783px;
+    }
+
+    //     .donation__block {
+    //         display: flex;
+    //         flex-direction: column-reverse;
+    //         align-items: center;
+    //     }
+
+
+    .donation__block-img {
+        margin: 80px 131px 100px 132px;
+        flex-basis: 50%;
+    }
+
+    .donation__block_text {
+        width: 380px;
+        height: 282px;
+        margin: 80px 194px 60px 194px;
+        flex-basis: 50%;
+    }
+
+    .donation__block_title {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:$mobile) {
+    .donation__container {
+        width: 100%;
+        max-width: 320px;
+        max-height: 542.2px;
+        margin: 0 auto;
+    }
+
+    .donation__block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .donation__block_img {
+        width: 260px;
+        height: 135.2px;
+        margin: 42px 30px;
+        flex-basis: 50%;
+        margin: 0 auto;
+    }
+
+    .donation__block_text {
+        width: 300px;
+        height: 281px;
+        margin: 42px 10px;
+        flex-basis: 50%;
+        margin: 0 auto;
+    }
+
+    .donation__block_title {
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    .donation__block_p1 {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .search-form {
+        border: none;
+        width: 281px;
+        height: 43px;
+        display: inline-flex;
+        /* color-primary */
+        background: $color-primary;
+        border-radius: 9px;
+    }
+
+    .search-form__txt {
+        @include center-center;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        border: none;
+        width: 206px;
+        height: 17px;
+        margin-left: 55px;
+        margin-top: 10px;
+        outline: none;
+        background: $color-primary;
+        letter-spacing: 0.06em;
+    }
+
+    .donation__block_p2 {
+        @include center-center;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: 400px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: justify;
+        /* or 150% */
+        margin-top: 20px;
+        color: $color-dark-m;
+        /* color-dark-m */
+    }
+
+}

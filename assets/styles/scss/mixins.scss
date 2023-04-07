@@ -1,0 +1,117 @@
+@mixin center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%title_H {
+    letter-spacing: 0.06em;
+}
+
+%title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin h1 {
+    @extend %title;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+}
+
+@mixin h2 {
+    @extend %title;
+    @extend %title_H;
+    color: $color-dark-l;
+    font-size: 35px;
+    line-height: 45px;
+    /* line-height: 130%; */
+}
+
+@mixin h3 {
+    @extend %title;
+    color: $color-dark-l;
+    font-size: 20px;
+    line-height: 23px;
+    /*line-height: 115%;*/
+}
+
+@mixin h4 {
+    @include h2;
+    font-size: 15px;
+    line-height: 17px;
+    /*line-height: 110%;*/
+}
+
+%subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin p {
+    @extend %subtitle;
+    font-size: 15px;
+    line-height: 160%;
+    /* or 24px */
+}
+
+// все кнопки
+%butt {
+    height: 52px;
+    // padding: 15px 45px;
+    border-radius: 100px;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+}
+
+// кнопка с исходной заливкой
+@mixin button-bg {
+    @extend %butt;
+    background: $color-primary;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-primary-light;
+        transition: 0.7s;
+    }
+
+    &:focus {
+        outline-color: transparent;
+        outline-style: solid;
+        box-shadow: 0 0 0 2px #f3c496;
+    }
+}
+
+// кнопка без заливки
+@mixin button {
+    @extend %butt;
+    background: $color-primary;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-primary-light;
+        transition: 0.7s;
+    }
+
+    &:focus {
+        outline-color: transparent;
+        outline-style: solid;
+        box-shadow: 0 0 0 2px black;
+    }
+
+}

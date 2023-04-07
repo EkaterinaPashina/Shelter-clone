@@ -1,0 +1,131 @@
+@media screen and (max-width:767px) {
+
+    .header {
+        width: 100%;
+        min-height: 1165px;
+        padding: 0 30px;
+    }
+
+    .navbar {
+        padding-top: 30px;
+    }
+
+    .open,
+    .close {
+        display: block;
+        max-width: 320px;
+        color: $color-primary;
+    }
+
+    .close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .switcher:checked~.nav {
+        right: 0;
+    }
+
+    .nav {
+        position: fixed;
+        width: 320px;
+        height: 100%;
+        background: $color-dark-3xl;
+        top: 0;
+        right: -100%;
+        font-size: 30px;
+        text-align: center;
+        padding: 100px 0;
+        transition: .7s;
+
+        .nav__menu {
+            flex-direction: column;
+
+            a {
+                padding: 20px;
+            }
+        }
+
+        .block-main {
+            display: grid;
+            grid-template-columns: minmax(320px, 708px);
+            grid-template-rows: repeat(2, auto);
+            margin-top: 60px;
+            min-height: 1015px;
+        }
+
+        .block-main__text {
+            grid-column: 1/1;
+            grid-row: 1/2;
+        }
+
+        .block-main__img {
+            grid-column: 1/1;
+            grid-row: 2/3;
+        }
+
+        .block-main__img_bigdog {
+            margin-top: 100px;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header {
+        padding: 0;
+        min-height: 823px;
+    }
+
+    .navbar {
+        padding: 30px 20px 0 20px;
+    }
+
+    .block-main {
+        min-width: 300px;
+        grid-template-columns: minmax(200px, 767px);
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 105px;
+        padding: 0 10px;
+        margin-top: 60px;
+        min-height: 673px;
+        box-sizing: border-box;
+    }
+
+    .block-main__text {
+        grid-column: 1/1;
+        grid-row: 1/2;
+        min-height: 296px;
+        text-align: center;
+    }
+
+    .block-main__title {
+        display: flex;
+        margin: 0;
+        // font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+        letter-spacing: 0.06em;
+    }
+
+    .block-main__subtitle {
+        padding-top: 10.72px;
+        padding-bottom: 43px;
+    }
+
+    .block-main__img {
+        grid-column: 1/1;
+        grid-row: 2/3;
+        min-height: 271.77px;
+        width: 100%;
+    }
+
+    .block-main__img_bigdog {
+        box-sizing: border-box;
+        // margin-top: 100px;
+        overflow: hidden;
+        width: 100%;
+
+    }
+}

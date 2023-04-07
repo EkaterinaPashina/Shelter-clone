@@ -1,0 +1,135 @@
+@import "variables";
+@import "mixins";
+// @import "_header_media";
+
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+    background: $bggradient;
+    background-size: $bgsize;
+    padding: 0 40px;
+
+    // min-height: 100vh;
+    // height: 908px;
+}
+
+.navbar {
+    // min-height: 100px;
+    padding-top: 40px;
+    @include center-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__title {
+    @extend %title;
+    @extend %title_H;
+    font-size: 32px;
+    line-height: 110%;
+    /* or 35px */
+    margin-bottom: 10px;
+    color: $color-primary;
+}
+
+.logo__subtitle {
+    @extend %subtitle;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: $color-light-xl;
+}
+
+.switcher {
+    position: absolute;
+    visibility: hidden;
+    left: -9999px;
+}
+
+label {
+    font-size: 30px;
+    cursor: pointer;
+    color: $color-primary;
+    display: none;
+}
+
+.nav {
+    @include p;
+    @include center-between;
+    color: $color-dark-s;
+
+    .nav__menu {
+        display: flex;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        @include center-between;
+        margin-left: 35px;
+        color: $color-light-s;
+
+        &:active,
+        &:hover {
+            color: $color-light-s;
+            border-bottom: $color-primary 3px solid;
+        }
+    }
+}
+
+
+.block-main {
+    min-height: 728px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(150px, 462px) minmax(150px, 698px);
+    grid-template-rows: auto;
+    grid-column-gap: 42px;
+    justify-content: space-between;
+    margin-top: 90px;
+
+    // display: flex;
+    // align-items: center;
+}
+
+.block-main__text {
+    width: 100%;
+    grid-column: 1/2;
+    align-items: center;
+}
+
+.block-main__title {
+    @include h1;
+    color: $color-light-xl;
+    margin-top: 164px;
+}
+
+.block-main__subtitle {
+    @include p;
+    color: $color-dark-s;
+    padding-top: 10.72px;
+    padding-bottom: 43px;
+}
+
+.block-main__btn {
+    @include button-bg;
+    width: 207px;
+}
+
+.block-main__img {
+    grid-column: 2/3;
+    max-width: 100%;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-align: right;
+
+    .block-main__img_bigdog {
+        width: 100%;
+        padding-bottom: 0;
+        display: inline;
+    }
+}

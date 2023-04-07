@@ -1,0 +1,40 @@
+@media (min-width:$tablet) and (max-width:$big-tablet) {
+    .about-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 80px;
+        justify-items: center;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    .about-content__pic {
+        justify-self: center;
+        padding: 0;
+        order: 1;
+    }
+}
+@media (min-width:$mobile) and (max-width:$tablet) {
+    .about-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-self: center;
+        padding-top: 42px;
+        padding-bottom: 42px;
+        gap: 20px;
+    }
+    .about-content__text {
+        justify-items: center;
+        justify-self: center;
+        grid-template-columns: minmax(270px, 300px);
+    }
+    .title-h2 {
+        font-size: 25px;
+        line-height: 32.5px;
+    }
+    .about-content__pic {
+        justify-self: center;
+        padding: 0;
+        order: 1;
+    }
+}
+

@@ -1,0 +1,29 @@
+$bggradient:url(/assets/images/footer-gradient-background.svg),
+radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
+#211F20;
+$bgsize:cover;
+// ЦВЕТА
+/* color-light-l */
+
+
+$color-light-s:#FAFAFA;
+$color-light-l: #F6F6F6;
+$color-light-xl:#fff;
+
+$color-dark-s:#CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-dark-l:#545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-3xl:#292929;
+
+$color-primary:#F1CDB3;
+$color-primary-light: #FDDCC4;
+
+// ПЕРЕМЕННЫЕ ШРИФТ
+
+// ПЕРЕМЕННЫЕ ДЛЯ БРЕЙКПОИНТОВ
+$mobile: 320px;
+$tablet: 768px;
+$big-tablet: 1025px;
+$desktop: 1280px;
+$large-desktop: 1560px;
